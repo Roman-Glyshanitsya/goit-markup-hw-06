@@ -113,11 +113,14 @@ img {
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-
   letter-spacing: 0.06em;
   color: #ffffff;
+
   background-color: var(--link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
+  border: none;
 
   transition: background-color var(--animation);
 }
@@ -529,7 +532,8 @@ img {
 
 .footer-thumb {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .address {
@@ -569,6 +573,47 @@ img {
   fill: #ffffff;
 }
 
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-field {
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: #2f303a;
+}
+
+.footer-field::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn .icon {
+  margin-left: 10px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -595,6 +640,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   min-width: 528px;
   min-height: 581px;
@@ -617,4 +663,20 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 12px;
+
+  color: #212121;
+}
+
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
